@@ -127,4 +127,28 @@
     num3 = 4;
     console.log(num3 /= 2);
 
+// Comparison operators
+
+    console.log(5 === 4);
+    console.log(5 !== 4);
+    console.log(5 > 4);
+    console.log(5 < 4);
+    console.log(5 >= 4);
+    console.log(5 <= 4);
+
+//// Button and paragraph example
+
+//    const btn = document.querySelector('button');
+//   const txt = document.querySelector('p');
 //
+//    btn.addEventListener('click', updateBtn);
+
+//    function updateBtn() {
+//    if (btn.textContent === 'Start machine') {
+//        btn.textContent = 'Stop machine';
+//       txt.textContent = 'The machine has started!';
+//    } else {
+//        btn.textContent = 'Start machine';
+//        txt.textContent = 'The machine is stopped.';
+//    }
+//    }
