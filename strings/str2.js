@@ -33,10 +33,18 @@ console.log(part4);
 // Substr
 
 let part5 = str.substr(7, 6);
-console.log(part5)
+console.log(part5);
 
 
 /// Replace
 
+let text = "Philip is baas";
+let newText = text.replace("Philip", "Ek")
+console.log(newText)
 
+// Replace all matches
+
+let text2 = "Philip is Philip";
+let newText2 = text.replace(/Philip/g, "Phildo")
+console.log(newText2)
 
