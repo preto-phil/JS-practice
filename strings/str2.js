@@ -72,3 +72,41 @@ let cat1 = "World";
 let cat2 = cat.concat(", ", cat1);
 console.log(cat2);
 
+/// Trimming strings
+
+// Trim both sides
+
+let ttext1 = "      Hello World!      ";
+let ttext2 = ttext1.trim();
+console.log(ttext2);
+
+// Trim only the start
+
+let ttext3 = ttext1.trimStart();
+console.log(ttext3);
+
+// Trim only the end
+
+let ttext4 = ttext1.trimEnd();
+console.log(ttext4)
+
+/// String Padding
+
+// Padding at start - Example 1
+
+let padtext = "5";
+let padded0 = padtext.padStart(4, "x");
+console.log(padded0);
+
+// Example 2
+
+let padded1 = padtext.padStart(3, " ");
+console.log(padded1);
+
+// Padding at end 
+
+let padded2 = padtext.padEnd(5, "~");
+console.log(padded2);
+
+
+
