@@ -109,4 +109,34 @@ let padded2 = padtext.padEnd(5, "~");
 console.log(padded2);
 
 
+/// Extracting string characters
 
+// charAt()
+
+let string1 = "hello world";
+let char0 = string1.charAt(0);
+console.log(char0)
+
+// charCodeAt()
+
+let charcode0 = string1.charCodeAt(0);
+console.log(charcode0);
+
+// Property access
+
+let pa1 = string1[0];
+console.log(pa1);
+
+/// Splitting strings into arrays
+
+let arrayText = "TEFL, TOP, Guitar, Exercise | Diet | Sleep"
+let a1 = arrayText.split(" ")
+let a2 = arrayText.split(",")
+let a3 = arrayText.split("|")
+let a4 = arrayText.split("")
+console.log(a1);
+console.log(a2);
+console.log(a3);
+console.log(a4);
+
+///
