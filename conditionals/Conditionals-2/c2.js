@@ -58,7 +58,133 @@ if (!(iceCreamVanOutside || houseStatus === 'on fire')) {
 
 
 
+//// Another if statement
 
+let year = prompt("In what year did the Springboks first participate in the Rugby World Cup?");
+
+if (year === '1995') {
+  alert("You are correct!");
+} else {
+  alert("Hah, you are so wrong!")
+}
+
+
+//// Number example
+
+let number = prompt('Number?');
+
+number = Number(number);
+
+if (number > 0) {
+  alert('1');
+} else if (number < 0) {
+  alert('-1');
+} else {
+  alert('0');
+}
+
+
+//// name example
+
+let name = prompt("What's the \"Offical\" name of JavaScript?")
+
+if (name == 'ECMAScript') {
+  alert("Right!");
+} else {
+  alert("You don't know? \"ECMAScript\"!")
+}
+
+
+
+//// Switch
+
+// Set the current day of the week to a variable, with 0 being Sunday and 6 being Saturday
+let day = prompt('Choose between 0 and 6');
+day = Number(day);
+
+switch (day) {
+	case 0:
+		console.log("It's Sunday, time to relax!");
+		break;
+	case 1:
+		console.log("Happy Monday!");
+		break;
+	case 2:
+		console.log("It's Tuesday. You got this!");
+		break;
+	case 3:
+		console.log("Hump day already!");
+		break;
+	case 4:
+		console.log("Just one more day 'til the weekend!");
+		break;
+	case 5:
+		console.log("Happy Friday!");
+		break;
+	case 6:
+		console.log("Have a wonderful Saturday!");
+		break;
+	default:
+		console.log("Something went horribly wrong...");
+}
+
+//// Grade 
+
+let grade = 84;
+
+switch (true) {
+  case grade >= 90:
+    console.log('A');
+    break;
+
+  case grade >= 80:
+    console.log('B');
+    break;
+  
+  case grade >= 70:
+    console.log('C');
+    break;
+
+  case grade >= 70:
+    console.log('D');
+    break;
+
+  default:
+    console.log('You Failed')
+}
+
+// Get number corresponding to the current month, with 0 being January and 11 being December
+let month = prompt("Choose a month and I'll tell what season it's in... January is month 0 and December month 11")
+month = Number(month);
+
+switch (month) {
+	// January, February, March
+	case 0:
+	case 1:
+	case 2:
+		console.log("Winter");
+		break;
+	// April, May, June
+	case 3:
+	case 4:
+	case 5:
+		console.log("Spring");
+		break;
+	// July, August, September
+	case 6:
+	case 7:
+	case 8:
+		console.log("Summer");
+		break;
+	// October, November, December
+	case 9:
+	case 10:
+	case 11:
+		console.log("Autumn");
+		break;
+	default:
+		console.log("Something went wrong.");
+}
 
 
 //// else if example
