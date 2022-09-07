@@ -61,25 +61,34 @@ hello('Simon');
 
 // Instead of:
 
-    // let event;
+const textBox = document.querySelector("#textBox");
+const output = document.querySelector("#output");
 
-    // function logKey(event) {
-    //    console.log(`You pressed "${event.key}"`);
-    // }
-    // textBox.addEventListener('keydown', logkey);
+textBox.addEventListener('keydown', (event) => output.textContent = `You pressed "${event.key}".`);
 
 // Use this:
 
-    // textBox.addEventListener('keydown', function(event) {
-    //  console.log(`You pressed "${event.key}".`); 
-    // });
+textBox.addEventListener('keydown', function(event) {
+    console.log(`You pressed "${event.key}".`); 
+});
+
+/// Arrow functions
+
+textBox.addEventListener('keydown', (event) => {
+    console.log(`You pressed "${event.key}".`); 
+});
+
+// If only one parameter and one curly bracket
+
+textBox.addEventListener('keydown', (event) => console.log(`You pressed “${event.key}”.`));
+
+
+/// With arrays
+
+const originals = [1, 2, 3];
+const doubled = originals.map((item) => item * 2);
+console.log(doubled)
 
 
 
 
-
-
-
-
-
-    
