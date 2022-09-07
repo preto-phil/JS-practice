@@ -89,6 +89,11 @@ const originals = [1, 2, 3];
 const doubled = originals.map((item) => item * 2);
 console.log(doubled)
 
+//// Return values
 
+const myText = 'The weather is cold';
+const myNewText = myText.replace('cold', 'warm');
+
+console.log(myNewText);
 
 
