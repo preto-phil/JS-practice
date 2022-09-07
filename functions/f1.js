@@ -97,3 +97,11 @@ const myNewText = myText.replace('cold', 'warm');
 console.log(myNewText);
 
 
+// Animals example
+
+function favoriteAnimal(animal) {
+    console.log(animal + " is my favorite animal!");
+    console.log(`I love ${animal}!`)
+  }
+ 
+favoriteAnimal('Donkey');
