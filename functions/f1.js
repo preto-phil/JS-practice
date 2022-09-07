@@ -105,3 +105,20 @@ function favoriteAnimal(animal) {
   }
  
 favoriteAnimal('Donkey');
+
+
+//// Another function
+
+function showMessage() {
+    alert("Hi!");
+}
+
+showMessage();
+
+/// Default value 
+
+function myMessage(show, text = 'no text available') {
+    alert(show + ': ' + text);
+}
+
+myMessage('My');
