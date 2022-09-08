@@ -169,3 +169,21 @@ function checkAge3(age) {
 if (checkAge3(age)) {
     alert('It\'s all coming together now!');
 }
+
+
+// function min
+
+function min(a, b) {
+    if ((a - b) < 0) {
+        return a;
+    } else {
+        return b;
+    }
+}
+
+alert(min(2, 5));
+
+alert(min(3, -1));
+
+alert(min(1, 1))
+
