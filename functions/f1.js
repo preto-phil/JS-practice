@@ -122,3 +122,50 @@ function myMessage(show, text = 'no text available') {
 }
 
 myMessage('My');
+
+// Return values
+
+let age = prompt("How old are you?", 18);
+
+function checkAge(age) {
+    if (age >= 18) {
+       return true; 
+    } else {
+        return confirm("Do you have permission from your parents?");
+    }
+}    
+   
+if (checkAge(age)) {
+    alert('Access Granted.');
+} else {
+    alert('Access Denied.')
+}
+
+function showMovie(age) {
+    if (!checkAge(age)) {
+        return;
+    }
+
+    alert('Showing you the movie...');
+
+}
+
+// Rewrite the function using '?' or '||'
+
+function checkAge2(age) {
+    return true || confirm('Did your parents agree?');
+}
+
+if (checkAge2(age)) {
+    alert('Nice')
+}
+
+// Using ?
+
+function checkAge3(age) {
+    return (age >= 18) ? true : confirm('Are you allowed to?');
+}
+
+if (checkAge3(age)) {
+    alert('It\'s all coming together now!');
+}
