@@ -187,3 +187,28 @@ alert(min(3, -1));
 
 alert(min(1, 1))
 
+/// function as a value
+
+let sayHi = function() {
+    alert( "Hello" );
+};
+
+alert( sayHi );
+
+let func = sayHi;
+  
+func();
+sayHi();
+
+/// Arrow
+
+function ask(question, yes, no) {
+    if (confirm(question)) yes();
+    else no();
+  }
+  
+  ask(
+    "Do you agree?",
+    () => alert("You agreed."),
+    () => alert("You canceled the execution.")
+  );
