@@ -8,6 +8,7 @@ let b = 'World';
 
 console.log(c)
 
+let c;
 
 //// Stack trace error
 
@@ -25,12 +26,14 @@ function print() {
 
 print();
 
+let cc;
 
 //// Syntax error
 
 
 function helloWorld() {
-    console.log "Hello World!"
+    //console.log "Hello World!";
+    console.log("Hello World!");
   }
 
 
@@ -38,7 +41,7 @@ function helloWorld() {
 
 const str1 = "Hello";
 const str2 = "World!";
-const message = str1.push(str2);
-
+//const message = str1.push(str2);
+const message = str1.concat(str2);
 
 
