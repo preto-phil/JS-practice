@@ -109,7 +109,7 @@ const b = new Array(42069666);
 console.log(a);
 console.log(b);
 
-//// Test if Array
+//// Test whether Array
 
 // Array.isArray()
 
@@ -118,4 +118,32 @@ console.log(Array.isArray(frenchCarBrands))
 // instanceof
 
 console.log(swedishCarBrands instanceof Array);
+
+//// JS Array Methods
+
+// toString()
+
+console.log(vegetables.toString());
+
+// join ()
+
+console.log(vegetables.join(" *** "));
+
+// pop()
+
+console.log(vegetables.pop());
+
+// push()
+
+console.log(vegetables.push());
+
+// shift()
+
+console.log(vegetables.shift());
+
+// unshift()
+
+console.log(vegetables.unshift('Broccoli'));
+
+// delete operator
 
