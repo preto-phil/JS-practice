@@ -157,4 +157,24 @@ console.log(euroCarBrands)
 
 // concat() values
 
+console.log(vegetables.concat('Pumpkin'));
 
+// Adding with splice()
+
+console.log(fruits.splice(2, 0, 'Apple', 'Guava'));
+
+// Removing splice() with new array created
+
+const splicedFruit = fruits.splice(0, 2);
+
+console.log(splicedFruit)
+
+// slice()
+
+console.log(fruits.splice(1, 3));
+
+const slicedFruit = fruits.splice(1);
+
+console.log(slicedFruit);
+
+// 
