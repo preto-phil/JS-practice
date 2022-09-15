@@ -145,5 +145,16 @@ console.log(vegetables.shift());
 
 console.log(vegetables.unshift('Broccoli'));
 
-// delete operator
+// concat()
+
+console.log(vegetables.concat(fruits));
+
+// concat() multiple arrays
+
+const euroCarBrands = germanCarBrands.concat(swedishCarBrands, frenchCarBrands);
+
+console.log(euroCarBrands)
+
+// concat() values
+
 
