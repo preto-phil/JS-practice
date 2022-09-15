@@ -83,3 +83,39 @@ for (let i = 0; i < veglength; i++) {
 list += "</ul>";
 
 document.getElementById("vegetables").outerHTML = list;
+
+//// Adding Array Elements
+
+// Using push() method
+
+germanCarBrands.push('Opel');
+
+console.log(germanCarBrands);
+
+// Using length property
+
+germanCarBrands[germanCarBrands.length] = "Porsche";
+
+console.log(germanCarBrands);
+
+//// new Array faults
+
+// Making an array with one element
+
+const a = [42069666];
+
+const b = new Array(42069666);
+
+console.log(a);
+console.log(b);
+
+//// Test if Array
+
+// Array.isArray()
+
+console.log(Array.isArray(frenchCarBrands))
+
+// instanceof
+
+console.log(swedishCarBrands instanceof Array);
+
