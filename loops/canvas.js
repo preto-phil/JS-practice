@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Create randomiser function
 
 function random(number) {
-    Math.floor(Math.random() * number);
+    return Math.floor(Math.random() * number);
 }
 
 // Create draw function
@@ -31,7 +31,7 @@ function draw() {
     // loop
     for (let i = 0; i < 100; i++) {
         ctx.beginPath();
-        ctx.fillStyle = 'rgba(150, 0, 0, 0.5)';
+        ctx.fillStyle = 'rgba(150, 150, 0, 0.5)';
         ctx.arc(random(canvas.width), random(canvas.height), random(50), 0, 2 * Math.PI);
         ctx.fill();
     }
