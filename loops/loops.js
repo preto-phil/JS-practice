@@ -44,4 +44,20 @@ for (i = 0; i < catArray.length ; i++ ) {
     console.log(catArray[i]);
 }
 
+//// Favourite cats
+
+const catNames = ['Pete', 'Biggles', 'Jasmine'];
+
+let myFavouriteCats = "My cats are called ";
+
+for (let i = 0; i < catNames.length; i++) {
+    if (i === catNames.length - 1) {
+        myFavouriteCats += `and ${catNames[i]}.`
+    } else {
+        myFavouriteCats += `${catNames[i]}, `
+    }
+}
+
+console.log(myFavouriteCats); 
+
 //// 
