@@ -60,4 +60,43 @@ for (let i = 0; i < catNames.length; i++) {
 
 console.log(myFavouriteCats); 
 
-//// 
+//// While loop
+
+const dogNames = ['Ace', 'Spike', 'Trooper'];
+
+let myFavouriteDogs = "My dogs are called ";
+
+let j = 0;
+
+while (j < dogNames.length) {
+    if (j === dogNames.length - 1) {
+        myFavouriteDogs += `and ${dogNames[j]}.`
+    } else {
+        myFavouriteDogs += `${dogNames[j]}, `
+    }
+
+    j++;
+}
+
+console.log(myFavouriteDogs);
+
+//// Do...While Loop
+
+const parrotNames = ['Birdy', 'Birdo', 'Birda'];
+
+let myFavouriteParrots = "My parrots are called "
+
+let k = 0;
+
+do {
+    if (k === dogNames.length - 1) {
+        myFavouriteParrots += `and ${parrotNames[k]}.`
+    } else {
+        myFavouriteParrots += `${parrotNames[k]}, `
+    }
+
+    k++;
+} while (k < parrotNames.length);
+
+console.log(myFavouriteParrots);
+
