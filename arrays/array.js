@@ -176,5 +176,3 @@ console.log(fruits.splice(1, 3));
 const slicedFruit = fruits.splice(1);
 
 console.log(slicedFruit);
-
-// 
