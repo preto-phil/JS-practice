@@ -1,3 +1,3 @@
-document.querySelector('HTML').addEventListener('click', function () {
+document.querySelector('HTML').addEventListener('click', () => {
     alert("Ouch! Stop poking me!")
 })
