@@ -66,3 +66,13 @@ console.log(Object.keys(rabbit));
 // for..in loops over both own and inherited keys
 for(let prop in rabbit) console.log(prop);
 
+// Filter out inherited properties
+for(let prop in rabbit) {
+  let isOwn = rabbit.hasOwnProperty(prop);
+
+  if (isOwn) {
+    console.log(`Our: ${prop}`); // Our: jumps
+  } else {
+    console.log(`Inherited: ${prop}`); // Inherited: eats
+  }
+}
