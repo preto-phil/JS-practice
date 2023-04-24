@@ -108,4 +108,34 @@ const calculator = (() => {
 
 calculator.add(3,5); // 8
 calculator.sub(6,2); // 4
-calculator.mul(14,5534); // 77476
+calculator.mul(14,5534); //
+
+// Creating a module
+(function() {
+  'use strict';
+  // Code here
+  // All functions and variables are scoped to this level
+})();
+
+// Exporting a module
+const myModule = (function() {
+  'use strict';
+  
+  const _privateProperty = 'Hello World!';
+
+  function _privateMethod() {
+    console.log(_privateProperty);
+  }
+
+  return {
+    publicMethod: function() {
+      _privateMethod();
+    }
+  }
+
+})();
+
+// Calling module content
+myModule.publicMethod();
+
+
