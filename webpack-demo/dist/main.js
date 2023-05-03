@@ -1,1 +1,0 @@
-(()=>{"use strict";document.body.appendChild(function(){const t=document.createElement("div"),e=document.createElement("div");return t.textContent="Hi! My name is "+"Philip",e.textContent="ONETWO",t}())})();
