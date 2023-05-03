@@ -6,6 +6,8 @@ import myName from './myName';
 import {functionOne, functionTwo} from './myModule';
 // Style import
 import './style.css';
+// Image import
+import Icon from './icon.png';
 
 function component1() {
   const element1 = document.createElement('div');
@@ -37,6 +39,19 @@ function component3() {
   return element3;
 }
 
+function addImage() {
+  const element4 = document.createElement('div');
+
+
+  const myIcon = new Image();
+  myIcon.src = Icon;
+
+  element4.appendChild(myIcon);
+
+  return element4
+}
+
 document.body.appendChild(component1());
 document.body.appendChild(component2());
 document.body.appendChild(component3());
+document.body.appendChild(addImage());
