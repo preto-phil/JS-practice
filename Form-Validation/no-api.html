@@ -4,23 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Simple custom error message</title>
-  <link rel="stylesheet" href="./style1.css">
+  <link rel="stylesheet" href="./style2.css">
 </head>
 
 <body>
-  <form novalidate>
+  <form>
     <p>
       <label for="mail">
         <span>Please enter an email address:</span>
-        <input type="email" id="mail" name="mail" required minlength="8" />
+        <input type="text" id="mail" name="mail" />
         <span class="error" aria-live="polite"></span>
       </label>
     </p>
     <button>Submit</button>
   </form>
-  
 
-  <script src="./constraint-validation.js"></script>
+  <script src="./javascript-validation.js"></script>
 </body>
 
 </html>
