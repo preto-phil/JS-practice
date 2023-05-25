@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form>
+    <label for="mail">Email: </label>
+    <input type="email" name="mail" id="mail" required aria-live="polite">
+    <div class="mailError"></div>
+
+    <label for="country">Country: </label>
+    <select id="Country">
+      <option value="sa" selected>South Africa</option>
+      <option value="na">Namibia</option>
+      <option value="bo">Botswana</option>
+      <option value="zi">Zimbabwe</option>
+    </select>
+
+    <label for="ZIP">ZIP code: </label>
+    <input type="text" id="ZIP" required aria-live="polite">
+    <div class="zipError"></div>
+
+    <label for="pwd">Password: </label>
+    <input type="text" id="pwd" required aria-live="polite">
+    <div class="pwdError"></div>
+
+    <label for="pwd-con">Confirm Password: </label>
+    <input type="text" id="pwd-con" required aria-live="polite">
+    <div class="conError"></div>
+
+    <button>Submit</button>
+  </form>
+
+  <script src="./main.js"></script>
+</body>
+</html>
