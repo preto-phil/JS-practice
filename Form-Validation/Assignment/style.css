@@ -90,7 +90,24 @@ label {
 
 input, select {
   font-size: 1.5rem;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 6px;
+  background-color: white;
 }
+
+input[type="email"]:valid,
+input[type="text"]:valid {
+  border: 3px solid green;
+  border-radius: 6px;
+  background-color: rgb(173, 255, 47, 0.2);
+}
+
+/* input[type="email"]:invalid {
+  border: 3px solid red;
+  border-radius: 6px;
+  background-color: rgba(255, 89, 47, 0.2);
+} */
 
 button {
   

@@ -14,8 +14,7 @@
 
     <div class="section2">
       <label for="mail">Email: </label>
-      <input type="email" name="mail" id="mail" required aria-live="polite">
-      <div class="mailError"></div>
+      <input type="email" name="mail" id="mail" required aria-live="polite" placeholder="john@doe.com">
     </div>
 
     <div class="section3">
@@ -31,19 +30,16 @@
     <div class="section4">
       <label for="ZIP">ZIP code: </label>
       <input type="text" id="ZIP" required aria-live="polite">
-      <div class="zipError"></div>
     </div>
 
     <div class="section5">
       <label for="pwd">Password: </label>
-      <input type="text" id="pwd" required aria-live="polite">
-      <div class="pwdError"></div>
+      <input type="text" id="pwd" required minlength="8" maxlength="20" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@S!*?%])[A-Za-z\d@$!%*?&]{8,20}$" aria-live="polite" value="">
     </div>
 
     <div class="section6">
       <label for="pwd-con">Confirm Password: </label>
-      <input type="text" id="pwd-con" required aria-live="polite">
-      <div class="conError"></div>
+      <input type="text" id="pwd-con" required  aria-live="polite" value="">
     </div>
 
     <div class="section7">
