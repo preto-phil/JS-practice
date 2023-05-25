@@ -83,8 +83,6 @@ function checkPassword() {
 
 function checkConfirm() {
   const confirm = document.getElementById('pwd-con');
-  let passwordValue = document.getElementById('pwd').value;
-  let confirmValue = document.getElementById('pwd-con').value;
 
   confirm.addEventListener('input', (event) => {
     let passwordValue = document.getElementById('pwd').value;
@@ -125,8 +123,71 @@ function checkConfirm() {
 window.onload = () => {
   document.getElementById("mail").onchange = checkEmail();
   document.getElementById("mail").oninput = checkEmail();
+  document.getElementById("country").onchange = checkZIP();
+  document.getElementById("ZIP").oninput = checkZIP();
   document.getElementById("pwd").onchange = checkPassword();
   document.getElementById("pwd").oninput = checkPassword();
   document.getElementById("pwd-con").onchange = checkConfirm();
   document.getElementById("pwd-con").oninput = checkConfirm();
 };
+
+
+
+
+// Zip
+
+
+function checkZIP() {
+  const constraints = {
+    sa: [
+      "/^\d{4}$/",
+      "South Africa ZIPs must have exactly 4 digits: e.g. 1950"
+    ],
+    na: [
+      "^[0-9]{2}+[0]+[0-9]{2}$",
+      "Namibia ZIPs must have exactly 5 digits, with the third digit 0: e.g. 19050"
+    ],
+    mo: [
+      "^[0-9]{4}$",
+      "Mozambique ZIPs must have exactly 4 digits: e.g. 1950"
+    ],
+    le: [
+      "^[0-9]{3}$",
+      "Lesotho ZIPs must have exactly 3 digits: e.g. 195"
+    ]
+  }
+
+  const zipCode = document.getElementById('ZIP');
+
+  zipCode.addEventListener('input', (event) => {
+    const country = document.getElementById('country').value;
+    const constraint = new RegExp(constraints[country][0], '');
+    console.log(constraint);
+    console.log(constraint.test(zipCode.value));
+    if (constraint.test(zipCode.value)) {
+      zipCode.setCustomValidity('');
+    } else {
+      zipCode.validity = false;
+      showZipError();
+    }
+  });
+
+  btn.addEventListener('click', (event) => {
+    if (!zipCode.validity.valid) {
+      event.preventDefault();
+      showZipError();
+    }
+  });
+
+  function showZipError() {
+    const country = document.getElementById('country').value;
+    const constraint = new RegExp(constraints[country][0], '');
+    if (zipCode.value !== constraint) {
+      zipCode.setCustomValidity(constraints[country][1]);
+      zipCode.reportValidity();
+    } else {
+      zipCode.setCustomValidity('');
+      zipCode.reportValidity();
+    }
+  }
+}
