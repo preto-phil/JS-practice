@@ -20,10 +20,10 @@ form.addEventListener('submit', (event) => {
 
 function showErrorMsg() {
   if (email.validity.valueMissing) {
-    errorMsg.textContent = 'Jy is dom';
+    errorMsg.textContent = 'Ek wag vir jou om iets te tik...';
     errorMsg.className = 'error active';
   } else if (email.validity.tooShort) {
-    errorMsg.textContent = `Jy is dom. Die email moet ${email.minLength} karakters lank wees.`;
+    errorMsg.textContent = `Die email moet tenminste ${email.minLength} karakters lank wees.`;
     errorMsg.className = 'error active';
   }
 }
