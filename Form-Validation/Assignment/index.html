@@ -9,31 +9,46 @@
 </head>
 <body>
   <form>
-    <label for="mail">Email: </label>
-    <input type="email" name="mail" id="mail" required aria-live="polite">
-    <div class="mailError"></div>
 
-    <label for="country">Country: </label>
-    <select id="Country">
-      <option value="sa" selected>South Africa</option>
-      <option value="na">Namibia</option>
-      <option value="bo">Botswana</option>
-      <option value="zi">Zimbabwe</option>
-    </select>
+    <div class="section1" id="header">Validate Form</div>
 
-    <label for="ZIP">ZIP code: </label>
-    <input type="text" id="ZIP" required aria-live="polite">
-    <div class="zipError"></div>
+    <div class="section2">
+      <label for="mail">Email: </label>
+      <input type="email" name="mail" id="mail" required aria-live="polite">
+      <div class="mailError"></div>
+    </div>
 
-    <label for="pwd">Password: </label>
-    <input type="text" id="pwd" required aria-live="polite">
-    <div class="pwdError"></div>
+    <div class="section3">
+      <label for="country">Country: </label>
+      <select id="Country">
+        <option value="sa" selected>South Africa</option>
+        <option value="na">Namibia</option>
+        <option value="bo">Botswana</option>
+        <option value="zi">Zimbabwe</option>
+      </select>
+    </div>
 
-    <label for="pwd-con">Confirm Password: </label>
-    <input type="text" id="pwd-con" required aria-live="polite">
-    <div class="conError"></div>
+    <div class="section4">
+      <label for="ZIP">ZIP code: </label>
+      <input type="text" id="ZIP" required aria-live="polite">
+      <div class="zipError"></div>
+    </div>
 
-    <button>Submit</button>
+    <div class="section5">
+      <label for="pwd">Password: </label>
+      <input type="text" id="pwd" required aria-live="polite">
+      <div class="pwdError"></div>
+    </div>
+
+    <div class="section6">
+      <label for="pwd-con">Confirm Password: </label>
+      <input type="text" id="pwd-con" required aria-live="polite">
+      <div class="conError"></div>
+    </div>
+
+    <div class="section7">
+      <button>Submit</button>
+    </div>
   </form>
 
   <script src="./main.js"></script>
