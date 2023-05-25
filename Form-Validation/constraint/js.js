@@ -45,7 +45,7 @@ window.onload = () => {
   document.getElementById("ZIP").oninput = checkZIP;
 };
 
-/// File size
+/* /// File size
 
 function checkFileSize() {
   const FS = document.getElementById("FS");
@@ -65,4 +65,4 @@ function checkFileSize() {
 
 window.onload = () => {
   document.getElementById("FS").onchange = checkFileSize;
-};
+}; */
