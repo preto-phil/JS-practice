@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'HeaderFont';
+  src: url("./Fonts/BotsmaticDemo-MXOr.ttf") format("ttf");
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  font-family: monospace;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+
+  background-image: url(./Images/860586-nebula-wallpaper.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#content {
+  width: auto;
+  height: 50%;
+
+  display: grid;
+  grid-template-rows: 8fr 1fr 1fr;
+
+
+  row-gap: 1rem;
+}
+
+#header {
+  font-size: 5rem;
+  padding: 3rem 0;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.multicolor {
+  background: linear-gradient(to left, rgb(230, 147, 230), rgb(184, 126, 226), rgb(128, 223, 128), rgb(144, 144, 230), rgb(216, 216, 50), rgba(255, 166, 0, 0.658), rgb(230, 116, 116));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
