@@ -68,6 +68,11 @@ body {
   color: black;
 }
 
+input:focus {
+  outline: none;
+  box-shadow: 2px 2px 12px rgb(134, 12, 190);
+}
+
 #search-btn,
 #new-gif {
   padding: 10px 20px;
@@ -80,6 +85,14 @@ body {
   font-weight: 600;
 
   cursor: pointer;
+
+  box-shadow: 2px 2px 12px violet;
+
+}
+
+img {
+  border: 2px solid rgb(183, 76, 204);
+  box-shadow: 2px 2px 12px violet;
 }
 
 #main-footer {
