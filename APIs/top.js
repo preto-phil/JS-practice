@@ -16,6 +16,9 @@ function fetchGIF() {
   })
   .then(function(response) {
     img.src = response.data.images.original.url;
+  })
+  .catch((err) {
+    console.log(`You\' gone fucked up: ${err}`)
   });
 }
 
