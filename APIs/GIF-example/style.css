@@ -74,7 +74,7 @@ input:focus {
 }
 
 #search-btn,
-#new-gif {
+#new-gif-btn {
   padding: 10px 20px;
   border-radius: 6px;
   border: 2px solid rgb(183, 76, 204);
@@ -85,10 +85,21 @@ input:focus {
   font-weight: 600;
 
   cursor: pointer;
-
-  box-shadow: 2px 2px 12px violet;
-
 }
+
+#search-btn:hover,
+#new-gif-btn:hover {
+  box-shadow: 2px 2px 12px violet;
+}
+
+
+#search-btn:active,
+#new-gif-btn:active {
+  background-color: rgb(14, 13, 13, 0.6);
+  color: rgb(183, 76, 204);
+  box-shadow: 2px 2px 12px violet;
+}
+
 
 img {
   border: 2px solid rgb(183, 76, 204);
