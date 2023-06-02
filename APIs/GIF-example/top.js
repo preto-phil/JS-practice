@@ -37,7 +37,7 @@ function openGithub() {
   });
 }
 
-
+openGithub();
 
 
 
@@ -62,7 +62,7 @@ function openGithub() {
   });
 } */
 
-openGithub();
+
 
 
 /* //// API form Giphy with key
