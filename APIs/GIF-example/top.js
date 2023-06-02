@@ -12,20 +12,14 @@ searchBtn.addEventListener('click', () => {
   searchInputValue = encodeURIComponent(rawSearchValue.trim());
 });
 
-function fetchRandomGif() {
-  fetch(`https://api.giphy.com/v1/gifs/translate?api_key=mGWay0MRfopcreOrjHhrouhIc3lMAXlX&s=${searchInputValue}`, { mode: 'cors' })
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return response.json();
-  })
-  .then(response => {
-    img.src = response.data.images.original.url;
-  })
-  .catch(err => {
+async function fetchRandomGif() {
+  try {
+    const response = await fetch(`https://api.giphy.com/v1/gifs/translate?api_key=mGWay0MRfopcreOrjHhrouhIc3lMAXlX&s=${searchInputValue}`, { mode: 'cors' })
+    const gifData = await response.json(); 
+    img.src = gifData.data.images.original.url;
+  } catch (err) {
     console.error(`An error occurred while fetching the GIF: ${err}`)
-  });
+  }
 }
 
 // Fetch and display Gif initially
