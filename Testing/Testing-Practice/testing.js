@@ -4,4 +4,14 @@ function capitalize(word) {
   return `${firstLetter}${restOfWord}`;
 }
 
-module.exports = capitalize;
+function reverse(word) {
+  let r = '';
+  for (let i = word.length - 1; i >= 0; i--) {
+    r += word[i];
+  }
+  return r
+}
+
+module.exports.capitalize = capitalize;
+module.exports.reverse = reverse;
+
