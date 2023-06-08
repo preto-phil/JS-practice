@@ -12,6 +12,14 @@ function reverse(word) {
   return r
 }
 
+const calculator = {
+  add: (x, y) => x + y,
+  subtract: (x, y) => x - y,
+  division: (x, y) => x === 0 ? 0 : x / y,
+  multiply: (x, y) => x * y,
+}
+
 module.exports.capitalize = capitalize;
 module.exports.reverse = reverse;
-
+module.exports.calculator = calculator;
+module.exports.ceaserCipher = ceaserCipher;
