@@ -72,3 +72,14 @@ test('Ceaser Cipher: Hello, World! = Jgnnq, Yqtnf! with key value 2', () => {
 test('Ceaser Cipher: Man United 1 - Man City 3 = Ocp Wpkvgf 3 - Ocp Ekvb 5 with key value 2', () => {
   expect(testModule.ceaserCipher('Man United 1 - Man City 3', 2)).toBe('Ocp Wpkvgf 3 - Ocp Ekvb 5');
 });
+
+
+// Test 5: Analyze array
+
+test('Analyze array: test 1', () => {
+  expect(testModule.analyzeArray([1, 2, 3, 4])).toEqual({average: 2.5, min: 1, max: 4, lentgh: 4});
+});
+
+test('Analyze array: test 2', () => {
+  expect(testModule.analyzeArray([10, 2, 8, 4])).toEqual({average: 6, min: 2, max: 10, lentgh: 4});
+});
