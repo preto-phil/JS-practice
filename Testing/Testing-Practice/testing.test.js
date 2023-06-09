@@ -44,3 +44,31 @@ test('Multiplication: 2 * 0', () => {
 
 
 // Test 4: Ceaser Cipher
+
+test('Ceaser Cipher: abc = bcd with key value 1', () => {
+  expect(testModule.ceaserCipher('abc', 1)).toBe('bcd');
+});
+
+test('Ceaser Cipher: Hello World = Ifmmp Xpsme with key value 2', () => {
+  expect(testModule.ceaserCipher('Hello World', 2)).toBe('Jgnnq Yqtnf');
+});
+
+test('Ceaser Cipher: Hello World = Gdkkn Vnqkc with key value -1', () => {
+  expect(testModule.ceaserCipher('Hello World', -1)).toBe('Gdkkn Vnqkc');
+});
+
+test('Ceaser Cipher: ZzZz = AaAa with key value 1', () => {
+  expect(testModule.ceaserCipher('ZzZz', 1)).toBe('AaAa');
+});
+
+test('Ceaser Cipher: AaAa = ZzZz with key value -1', () => {
+  expect(testModule.ceaserCipher('AaAa', -1)).toBe('ZzZz');
+});
+
+test('Ceaser Cipher: Hello, World! = Jgnnq, Yqtnf! with key value 2', () => {
+  expect(testModule.ceaserCipher('Hello, World!', 2)).toBe('Jgnnq, Yqtnf!');
+});
+
+test('Ceaser Cipher: Man United 1 - Man City 3 = Ocp Wpkvgf 3 - Ocp Ekvb 5 with key value 2', () => {
+  expect(testModule.ceaserCipher('Man United 1 - Man City 3', 2)).toBe('Ocp Wpkvgf 3 - Ocp Ekvb 5');
+});
