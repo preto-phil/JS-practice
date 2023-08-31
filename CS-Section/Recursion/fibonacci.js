@@ -20,17 +20,22 @@ function fibs(n) {
   console.log(array);
 }
 
+// or
+
+const fibsIterative = (n) => {
+  const result = [0, 1];
+
+  while (result.length < n) {
+    result.push(result[result.length - 2] + result[result.length - 1]);
+  }
+
+  return result;
+};
+
 /* Recursive version */
 
-function fibsRec(n) {
-  let array = [];
+function fibsRec(n, a = [0,1]) {
+  if (a.length >= n) return a;
 
-  if (n == 1) return 0;
-  if (n == 2) return 1;
-
-  let x = fibsRec(n-1) + fibsRec(n-2);
-
-  array.push(x);
-
-  console.log(array) 
+  return fibsRec(n, [...a, a[a.length - 1] + a[a.length - 2]]);
 }
